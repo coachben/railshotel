@@ -1,0 +1,69 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Welcome to the Ruby Hotek</title>
+<style type="text/css">
+    /* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+    
+    body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: orange;
+        padding: 10px 0px;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+    }
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+</style>
+
+</head>
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <nav>
+                <%= link_to 'Home', pages_home_path %>
+                <%= link_to 'About', pages_about_path %>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+    <h1>> About</h1>
+        <%= image_tag 'destination.jpg', :style => "padding: 0 10px; float: left " %>
+
+<p style="margin-top: 10px"></p>
+
+<p>We are the leading hotel at the Junction of Jakaya Kikwete and Ralph Bunche Road in the bustling Milimani Suburb. <br><br>
+
+We offer 42 standard rooms and 17 superior suites. For the guests who wish to stay longer or cook on their own, KCS offers 25 studio apartments equipped with kitchenettes. The hotel also has 12 spacious one bedroom, air conditioned apartments with a separate lounge and kitchen. All rooms and apartments are equipped with a LCD TVs.<br><br>
+
+KC offers a wide range of conferencing facilities. Beat the weather and swim in our heated pool, enjoy continental and traditional cuisines at Sokoni Restaurant or visit Ikulu Lounge to enjoy the finest drinks. 
+
+.</p>
+    </div>    
+    <div class="fixed-footer">
+        <div class="container">Copyright &copy; 2019 KC </div>        
+    </div>
+</body>
+</html>
